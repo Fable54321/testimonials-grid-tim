@@ -1,4 +1,4 @@
-
+import jeanette from "../../images/image-jeanette.jpg";
 
 const Card_D = () => {
   return (
@@ -6,7 +6,7 @@ const Card_D = () => {
       
  <header>
   <div className="author-name">
-    <img src='src\images\image-jeanette.jpg' alt="a picture of the author"/>
+    <img src={jeanette} alt="a picture of the author"/>
   <h2><span data-color-dark="data-color-dark">Jeanette Harmon <br/></span>
   <span className="subheader" data-subheader-dark="data-subheader-dark">Verified Graduate</span></h2>
   </div>

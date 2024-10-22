@@ -1,4 +1,4 @@
-
+import kira from "../../images/image-kira.jpg";
 
 const Card_C = () => {
   return (
@@ -6,7 +6,7 @@ const Card_C = () => {
    
   <header>
   <div className="author-name">  
-  <img src="src\images\image-kira.jpg" alt="author's picture"/>
+  <img src={kira} alt="author's picture"/>
   <h2><span data-color-dark="data-color-dark">Kira Whittle</span><br/>
   <span className="subheader" data-subheader-dark="data-subheader-dark">Verified Graduate</span></h2>
   </div>   

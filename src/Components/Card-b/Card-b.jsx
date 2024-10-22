@@ -1,11 +1,11 @@
-
+import jonathan from "../../images/image-jonathan.jpg";
 
 const Card_B = () => {
   return (
     <div>
   <header>
   <div className="author-name">
-  <img src="src/images/image-jonathan.jpg" alt="the author's picture" />  
+  <img src={jonathan} alt="the author's picture" />  
   <h2>Jonathan Walters <br />
   <span className="subheader">Verified Graduate</span></h2>
   </div>
