@@ -1,0 +1,119 @@
+@use "variables.scss" as *;
+@use "utility";
+@use "../Components/App/App.module";
+/*Reset*/
+
+*, *::before, *::after {
+   box-sizing: border-box;
+ }
+ 
+ * {
+   margin: 0;
+   padding: 0;
+   font: inherit; /* Get rid of all font sizes and heights */
+ }
+ 
+ html {
+   color-scheme: dark light; /* Default dark */
+   hanging-punctuation: first last; /* Not supported in Chrome */
+ }
+ 
+ body {
+   min-height: 100vh;
+ }
+ 
+ /* Media responsive */
+ img, picture, svg, video {
+   display: block;
+   max-width: 100%;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+   text-wrap: balance;
+ }
+ 
+ p {
+   max-width: 75ch;
+   text-wrap: pretty; /* Prevents orphans on lines */
+ }
+ 
+ @media (prefers-reduced-motion: no-preference) {
+   :has(:target) {
+     scroll-behavior: smooth;
+     scroll-padding-top: 3rem;
+   }
+ }
+ 
+/*General stylings*/ 
+
+body{
+   background-color: $clr-neutral-200;
+   display: flex;
+   justify-content: center;
+   font-family: $ff-primary;
+   
+}
+
+
+@media (min-width: 70em){
+
+body {
+   align-items: center;
+   min-height: 100vh;
+}
+
+}
+
+h2 {
+  font-size: $fs-primary-headers;
+  color: $clr-neutral-100;
+}
+
+
+h3 {
+  margin-top: $margin-top;
+  letter-spacing: 0px;
+  font-weight: $fw-600;
+  font-size: $fs-secondary-headers;
+  color: $clr-neutral-100;
+  line-height: 1.27em;
+}
+
+@media (min-width: 70em){
+  h3 {
+    line-height: 1.2em;
+  }
+}
+
+
+p {
+   margin-top: $margin-top;
+   font-weight: $fw-500;
+   font-size: $fs-body;
+   color: $clr-neutral-100-05;
+   line-height: 150%;
+}
+
+@media (min-width: 70em){
+  p {
+    line-height: 140%;
+    letter-spacing: 0px;
+  }
+}
+
+
+
+
+/* repeating classes */
+
+.author-name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-name img {
+  width: 28px;
+  height: 28px;
+  border-radius: 100vw;
+}

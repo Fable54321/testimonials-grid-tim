@@ -1,0 +1,39 @@
+/*colors*/
+
+$clr-neutral-100: hsl(0,0%,100%);
+$clr-neutral-200: hsl(210, 46%, 95%); /*blueish*/
+$clr-neutral-300: hsl(0,0%,81%);
+$clr-neutral-500: hsl(217, 19%, 35%);
+$clr-neutral-700: hsl(219, 29%, 14%);
+
+$clr-accent-400: hsl(263, 55%, 52%);
+
+
+
+$clr-neutral-100-05: hsla(0, 0%, 100%, 0.5);
+$clr-neutral-100-07: hsla(0, 0%, 100%, 0.7);
+
+$clr-neutral-700-05: hsla(219, 29%, 14%, 0.6);
+
+/*fonts*/
+
+$fs-body: 12.5px;
+$fs-primary-headers: 13px;
+$fs-subheader: 11px;
+$fs-secondary-headers: 20px;
+
+$fw-500: 500;
+$fw-600: 600;
+
+$ff-primary: "Barlow Semi Condensed", "Sans-Serif";
+
+$ff-headers: $ff-primary;
+$ff-body: $ff-primary;
+
+/*spacing*/
+
+$margin-top: 17px;
+
+@media (min-width: 35em){
+    $margin-top: 24px;
+}

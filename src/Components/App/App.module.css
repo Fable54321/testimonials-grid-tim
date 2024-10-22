@@ -1,0 +1,102 @@
+/*colors*/
+/*blueish*/
+/*fonts*/
+/*spacing*/
+/*fine-tuning styling */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: clamp(300px, 87.2vw, 500px);
+  gap: 1.9rem;
+  margin-top: 4.8rem;
+}
+
+@media (min-width: 70em) {
+  .wrapper {
+    margin-top: 0;
+    display: grid;
+    -moz-column-gap: 1.9rem;
+         column-gap: 1.9rem;
+    row-gap: 1.5rem;
+    grid-template-areas: "r r y c" "o l l c";
+    width: 1110px;
+    height: 572px;
+  }
+}
+.wrapper > * {
+  border-radius: 8px;
+  padding: 31px;
+}
+
+@media (min-width: 70em) {
+  .wrapper > * {
+    padding-top: 24px;
+  }
+}
+.card-a {
+  background-color: hsl(263, 55%, 52%);
+  background-image: url("../../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 89% 0;
+  order: 1;
+}
+
+@media (max-width: 70em) {
+  .card-a p {
+    margin-top: 2.5rem;
+  }
+}
+@media (min-width: 70em) {
+  .card-a {
+    background-position: 82% 0;
+  }
+}
+.card-b {
+  background-color: hsl(217, 19%, 35%);
+  order: 2;
+}
+
+.card-c {
+  background-color: hsl(0, 0%, 100%);
+  order: 5;
+  box-shadow: 40px 40px 30px -30px hsl(212, 19%, 85%);
+}
+
+.card-d {
+  background-color: hsl(0, 0%, 100%);
+  order: 3;
+  box-shadow: 40px 40px 30px -30px hsl(212, 19%, 85%);
+}
+
+.card-e {
+  background-color: hsl(219, 29%, 14%);
+  order: 4;
+}
+
+@media (min-width: 70em) {
+  .card-a {
+    grid-area: r;
+    width: 540px;
+    height: 282px;
+  }
+  .card-b {
+    grid-area: y;
+    width: 255px;
+    height: 282px;
+  }
+  .card-c {
+    grid-area: c;
+    width: 255px;
+    height: 572px;
+  }
+  .card-d {
+    grid-area: o;
+    width: 255px;
+    height: 266px;
+  }
+  .card-e {
+    grid-area: l;
+    width: 540px;
+    height: 266px;
+  }
+}/*# sourceMappingURL=App.module.css.map */

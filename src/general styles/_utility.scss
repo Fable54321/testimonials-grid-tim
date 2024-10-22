@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+
+
+[data-color-dark] {
+    color: $clr-neutral-700;
+  }
+
+.subheader {
+    font-size: $fs-subheader;
+    color: $clr-neutral-100-05;
+}
+
+[data-subheader-dark] {
+    color: $clr-neutral-700-05;
+}
+
+#wider-img {
+    width: 32px;
+    height: 32px;
+}
+
+[data-border-color-accent] {
+    
+    border: 2px solid hsl(264, 82%, 70%);
+}
+

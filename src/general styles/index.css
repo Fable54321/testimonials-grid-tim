@@ -1,0 +1,224 @@
+/*colors*/
+/*blueish*/
+/*fonts*/
+/*spacing*/
+[data-color-dark] {
+  color: hsl(219, 29%, 14%);
+}
+
+.subheader {
+  font-size: 11px;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+[data-subheader-dark] {
+  color: hsla(219, 29%, 14%, 0.6);
+}
+
+#wider-img {
+  width: 32px;
+  height: 32px;
+}
+
+[data-border-color-accent] {
+  border: 2px solid hsl(264, 82%, 70%);
+}
+
+/*fine-tuning styling */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: clamp(300px, 87.2vw, 500px);
+  gap: 1.9rem;
+  margin-top: 4.8rem;
+}
+
+@media (min-width: 70em) {
+  .wrapper {
+    margin-top: 0;
+    display: grid;
+    -moz-column-gap: 1.9rem;
+         column-gap: 1.9rem;
+    row-gap: 1.5rem;
+    grid-template-areas: "r r y c" "o l l c";
+    width: 1110px;
+    height: 572px;
+  }
+}
+.wrapper > * {
+  border-radius: 8px;
+  padding: 31px;
+}
+
+@media (min-width: 70em) {
+  .wrapper > * {
+    padding: 0px 0px 20px 0px;
+  }
+}
+.card-a {
+  background-color: hsl(263, 55%, 52%);
+  background-image: url("../../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 89% 0;
+  order: 1;
+}
+
+@media (max-width: 70em) {
+  .card-a p {
+    margin-top: 2.5rem;
+  }
+}
+@media (min-width: 70em) {
+  .card-a {
+    background-position: 82% 0;
+  }
+}
+.card-b {
+  background-color: hsl(217, 19%, 35%);
+  order: 2;
+}
+
+.card-c {
+  background-color: hsl(0, 0%, 100%);
+  order: 5;
+  box-shadow: 40px 40px 30px -30px hsl(212, 19%, 85%);
+}
+
+.card-d {
+  background-color: hsl(0, 0%, 100%);
+  order: 3;
+  box-shadow: 40px 40px 30px -30px hsl(212, 19%, 85%);
+}
+
+.card-e {
+  background-color: hsl(219, 29%, 14%);
+  order: 4;
+}
+
+@media (min-width: 70em) {
+  .card-a {
+    grid-area: r;
+    width: 540px;
+    height: 282px;
+  }
+  .card-b {
+    grid-area: y;
+    width: 255px;
+    height: 282px;
+  }
+  .card-c {
+    grid-area: c;
+    width: 255px;
+    height: 572px;
+  }
+  .card-d {
+    grid-area: o;
+    width: 255px;
+    height: 266px;
+  }
+  .card-e {
+    grid-area: l;
+    width: 540px;
+    height: 266px;
+  }
+}
+/*Reset*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit; /* Get rid of all font sizes and heights */
+}
+
+html {
+  color-scheme: dark light; /* Default dark */
+  hanging-punctuation: first last; /* Not supported in Chrome */
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Media responsive */
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p {
+  max-width: 75ch;
+  text-wrap: pretty; /* Prevents orphans on lines */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+  }
+}
+/*General stylings*/
+body {
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  font-family: "Barlow Semi Condensed", "Sans-Serif";
+}
+
+@media (min-width: 70em) {
+  body {
+    align-items: center;
+    min-height: 100vh;
+  }
+}
+h2 {
+  font-size: 13px;
+  color: hsl(0, 0%, 100%);
+}
+
+h3 {
+  margin-top: 17px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+  line-height: 1.27em;
+}
+
+@media (min-width: 70em) {
+  h3 {
+    line-height: 1.2em;
+  }
+}
+p {
+  margin-top: 17px;
+  font-weight: 500;
+  font-size: 12.5px;
+  color: hsla(0, 0%, 100%, 0.5);
+  line-height: 150%;
+}
+
+@media (min-width: 70em) {
+  p {
+    line-height: 140%;
+    letter-spacing: 0px;
+  }
+}
+/* repeating classes */
+.author-name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-name img {
+  width: 28px;
+  height: 28px;
+  border-radius: 100vw;
+}/*# sourceMappingURL=index.css.map */
