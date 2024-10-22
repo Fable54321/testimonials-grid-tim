@@ -1,11 +1,12 @@
 import "../../general styles/index.css"
 
+
 const Card_A = () => {
   return (
     <div>
     <header>
   <div className="author-name">   
-  <img id="wider-img" data-border-color-accent="data-border-color-accent" src="src\images\image-daniel.jpg"  alt="the author's image" />
+  <img id="wider-img" data-border-color-accent="data-border-color-accent" src="../../images/image-daniel.jpg"  alt="the author's image" />
   <h2>Daniel Clifford <br/>
   <span className="subheader">Verified Graduate</span></h2>
   </div> 
