@@ -39,6 +39,7 @@
   background-repeat: no-repeat;
   background-position: 89% 0;
   order: 1;
+  z-index: -1;
 }
 
 @media (max-width: 70em) {
@@ -48,7 +49,6 @@
 }
 @media (min-width: 70em) {
   .card-a {
-    background-image: url("../../images/bg-pattern-quotation.svg");
     background-position: 82% 0;
   }
 }

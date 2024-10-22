@@ -189,6 +189,7 @@ h3 {
   font-size: 20px;
   color: hsl(0, 0%, 100%);
   line-height: 1.27em;
+  z-index: 1000;
 }
 
 @media (min-width: 70em) {
