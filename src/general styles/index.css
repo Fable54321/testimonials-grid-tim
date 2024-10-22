@@ -52,7 +52,7 @@
 
 @media (min-width: 70em) {
   .wrapper > * {
-    padding: 0px 0px 20px 0px;
+    padding-top: 24px;
   }
 }
 .card-a {

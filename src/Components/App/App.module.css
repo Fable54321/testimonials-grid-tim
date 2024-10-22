@@ -48,6 +48,7 @@
 }
 @media (min-width: 70em) {
   .card-a {
+    background-image: url("../../images/bg-pattern-quotation.svg");
     background-position: 82% 0;
   }
 }
